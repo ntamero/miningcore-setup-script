@@ -1,0 +1,1 @@
+# miningcore-setup-script
