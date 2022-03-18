@@ -2,7 +2,7 @@ import subprocess
 #define global vars which will be used in instalation procdure
 
 ubuntuversion = "0"
-miningcore_git_repo = "https://github.com/akshaynexus/miningcore"
+miningcore_git_repo = "https://github.com/oliverw/miningcore"
 # START Helper functions
 
 def run_command(command):
@@ -42,7 +42,7 @@ def install_postgresql():
     run_command('sudo apt install postgresql-12')
 
 def install_dotnet():
-    run_command('wget https://packages.microsoft.com/config/ubuntu/19.10/packages-microsoft-prod.deb -O packages-microsoft-prod.deb')
+    run_command('wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb')
     run_command('sudo dpkg -i packages-microsoft-prod.deb')
     run_command('sudo apt-get update')
     run_command('sudo apt-get install apt-transport-https')
